@@ -1,0 +1,10 @@
+<h1>Restaurants</h1>
+
+<%= link_to "New Restaurant", new_restaurant_path, class: "dib mv3 no-underline" %>
+
+<% @restaurants.each do |restaurant| %>
+  <div class="flex justify-between">
+    <%= link_to restaurant.name, restaurant, class: "no-underline" %>
+    <span><%= restaurant.phone_number %></span>
+  </div>
+<% end %>

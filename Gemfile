@@ -62,3 +62,12 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
+
+# Added at 2018-06-06 11:57:07 +0200 by vtm:
+gem "faker", "~> 1.8"
+
+# Added at 2018-06-06 13:29:41 +0200 by vtm:
+gem "bootstrap-sass", "~> 3.3"
+
+# Added at 2018-06-06 15:22:33 +0200 by vtm:
+gem "simple_form", "~> 4.0"

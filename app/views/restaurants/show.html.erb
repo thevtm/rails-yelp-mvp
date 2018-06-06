@@ -1,0 +1,21 @@
+<h1><%= @restaurant.name %></h1>
+
+<p>
+  Address: <%= @restaurant.address %>
+</p>
+
+<p>
+  Telephone: <%= @restaurant.phone_number %>
+</p>
+
+<%= link_to "Back", restaurants_path, class: "dib ma2 no-underline" %>
+<%= link_to "New Review", new_restaurant_review_path(@restaurant), class: "dib ma2 no-underline" %>
+
+<div>
+  <% @restaurant.reviews.each do |review| %>
+    <div class="well flex justify-between">
+      <span><%= review.content %></span>
+      <span><%= review.rating %></span>
+    </div>
+  <% end %>
+</div>
